@@ -1,5 +1,13 @@
 function selectionSort(arr) {
   // type your code here
+ 
+  function compareNumbers(a, b) {
+    return a-b
+  }
+  let newArr = arr.sort(compareNumbers)
+  console.log(newArr)
+  return newArr
+
 }
 
 if (require.main === module) {
